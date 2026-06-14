@@ -1,0 +1,158 @@
+cff-version: 1.2.0
+
+# ==============================================================================
+# CITATION.cff — Machine-readable citation metadata
+# FAIR4RS Principles — Findable (F2, F3) / Reusable (R1.1, R1.2)
+# Reference: Chue Hong et al. (2021). FAIR Principles for Research Software.
+#            https://doi.org/10.15497/RDA00068
+# ==============================================================================
+
+title: >-
+  Accelerometry Analysis Pipeline for Physical Activity Habit Modelling —
+  EuroMov DHM Lab
+
+message: >-
+  If you use this software in your research, please cite it using
+  the metadata provided in this file.
+
+type: software
+
+version: "1.0.0"
+
+date-released: "2026-01-01"
+
+license: MIT
+
+repository-code: https://github.com/euromov-dhm-lab/accelerometry-pipeline
+
+url: https://github.com/euromov-dhm-lab/accelerometry-pipeline
+
+abstract: >-
+  A modular Python pipeline for processing raw triaxial accelerometer data
+  from the ActiGraph wGT3X-BT device. Implements the ActiGraph count
+  algorithm (agcounts), intensity classification using validated VM thresholds
+  (Sasaki et al., 2011; Aguilar-Farías et al., 2014), non-wear detection
+  (Choi et al., 2011), and a heuristic cycling detection algorithm based on
+  spectral analysis and signal regularity (Brage et al., 2005; Mannini &
+  Sabatini, 2010). Delivered as a Streamlit web application with interactive
+  visualisation, manual annotation, and publication-ready figure export.
+
+authors:
+  - family-names: Lagarde
+    given-names: Alexis
+    affiliation: "Université de Montpellier — EuroMov DHM Lab"
+    email: alexis.lagarde@etu.umontpellier.fr
+
+keywords:
+  - accelerometry
+  - physical activity
+  - ActiGraph
+  - wGT3X-BT
+  - agcounts
+  - vector magnitude
+  - intensity classification
+  - non-wear detection
+  - cycling detection
+  - habit formation
+  - Streamlit
+  - Python
+
+language: Python
+
+references:
+  - type: article
+    authors:
+      - family-names: Sasaki
+        given-names: "J.E."
+      - family-names: John
+        given-names: D.
+      - family-names: Freedson
+        given-names: "P.S."
+    title: "Validation and comparison of ActiGraph activity monitors"
+    journal: "Journal of Science and Medicine in Sport"
+    volume: 14
+    issue: 5
+    start: 411
+    end: 416
+    year: 2011
+    doi: 10.1016/j.jsams.2011.01.003
+
+  - type: article
+    authors:
+      - family-names: "Aguilar-Farías"
+        given-names: N.
+      - family-names: Brown
+        given-names: "W.J."
+      - family-names: Peeters
+        given-names: "G.M.E.E."
+    title: >-
+      ActiGraph GT3X+ cut-points for identifying sedentary behaviour in older
+      adults in free-living environments
+    journal: "Journal of Science and Medicine in Sport"
+    volume: 17
+    issue: 3
+    start: 293
+    end: 299
+    year: 2014
+    doi: 10.1016/j.jsams.2013.07.002
+
+  - type: article
+    authors:
+      - family-names: Choi
+        given-names: L.
+      - family-names: Liu
+        given-names: Z.
+      - family-names: Matthews
+        given-names: "C.E."
+      - family-names: Buchowski
+        given-names: "M.S."
+    title: >-
+      Validation of accelerometer wear and nonwear time classification algorithm
+    journal: "Medicine & Science in Sports & Exercise"
+    volume: 43
+    issue: 2
+    start: 357
+    end: 364
+    year: 2011
+    doi: 10.1249/MSS.0b013e3181ed61a3
+
+  - type: article
+    authors:
+      - family-names: Brage
+        given-names: S.
+      - family-names: Brage
+        given-names: N.
+      - family-names: Franks
+        given-names: "P.W."
+      - family-names: Ekelund
+        given-names: U.
+      - family-names: Wareham
+        given-names: "N.J."
+    title: >-
+      Branched equation modelling of simultaneous accelerometry and heart rate
+      monitoring improves estimate of directly measured physical activity energy
+      expenditure
+    journal: "Journal of Applied Physiology"
+    volume: 98
+    issue: 1
+    start: 166
+    end: 173
+    year: 2005
+    doi: 10.1152/japplphysiol.00510.2004
+
+  - type: article
+    authors:
+      - family-names: Mannini
+        given-names: A.
+      - family-names: Sabatini
+        given-names: "A.M."
+    title: >-
+      Machine learning methods for classifying human physical activity from
+      on-body accelerometers
+    journal: Sensors
+    volume: 10
+    issue: 2
+    start: 1154
+    end: 1175
+    year: 2010
+    doi: 10.3390/s100201154
